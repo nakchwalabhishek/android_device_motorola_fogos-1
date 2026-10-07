@@ -47,20 +47,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
 
-# FM
-TARGET_HAS_FM := true
-
-PRODUCT_PACKAGES += \
-    FM2
-
 # Init
 PRODUCT_PACKAGES += \
     init.mmi.overlay.rc \
     init.nfc.sec.rc \
     init.oem.fingerprint2.sh
-
-# LiveDisplay
-$(call soong_config_set_bool,livedisplay_sysfs,enable_ab,true)
 
 #Power
 PRODUCT_COPY_FILES += \
