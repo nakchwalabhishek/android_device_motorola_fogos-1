@@ -4,4 +4,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_fogos.mk
+    $(LOCAL_DIR)/statix_fogos.mk
+
+COMMON_LUNCH_CHOICES := \
+    statix_fogos-bp4a-user \
+    statix_fogos-bp4a-userdebug
